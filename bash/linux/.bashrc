@@ -91,10 +91,13 @@ fi
 alias ll='ls -alF'
 alias la='ls -lA'
 alias l='ls -CF'
-alias ac='adb connect teixo'
+alias ac='adb connect $1'
 alias ar='adb root'
 alias ad='adb disconnect'
 alias am='adb remount'
+alias aca='adb shell pm clear es.cinfo.skipper.tvapp'
+alias asa='adb shell am force-stop es.cinfo.skipper.tvapp'
+alias afa='adb shell am force-stop es.cinfo.skipper.tvapp'
 alias c='clear'
 alias ..='cd ..'
 alias ...='cd ../../../'
@@ -148,3 +151,4 @@ fi
 export PATH=$PATH:/home/diego.otero/Android/Sdk/platform-tools
 export BUILDS=/home/diego.otero/StudioProjects/TvApp/app/build/outputs/apk
 export SDK=/home/diego.otero/Android/Sdk
+export GRADLECACHE=$HOME/.gradle/caches/modules-2/files-2.1/es.cinfo.skipper/appmanager
